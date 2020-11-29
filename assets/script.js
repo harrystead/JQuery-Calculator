@@ -25,3 +25,7 @@ $(document).ready(function() {
         operatorChosen = true;
         $("#operator").text(operator)
       })
+        
+    $(".equal").on("click", function () {
+        var firstNumber = parseInt(firstNumString);
+        var secondNumber = parseInt(secondNumString);
