@@ -29,3 +29,21 @@ $(document).ready(function() {
     $(".equal").on("click", function () {
         var firstNumber = parseInt(firstNumString);
         var secondNumber = parseInt(secondNumString);
+
+        if(operator === "plus") {
+            resultEl.text(firstNumber + secondNumber);
+          }
+      
+          else if(operator === "minus") {
+          resultEl.text(firstNumber - secondNumber);
+          }
+      
+      
+          else if(operator === "divide") {
+          resultEl.text(firstNumber / secondNumber);
+          }
+      
+          else if(operator === "times") {
+          resultEl.text(firstNumber * secondNumber);
+          }
+        })
