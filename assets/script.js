@@ -19,3 +19,9 @@ $(document).ready(function() {
           $("#second-number").text(secondNumString);
         }
       })
+
+      $(".operator").on("click", function () {
+        operator = $(this).val();
+        operatorChosen = true;
+        $("#operator").text(operator)
+      })
