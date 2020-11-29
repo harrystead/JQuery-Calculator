@@ -47,3 +47,9 @@ $(document).ready(function() {
           resultEl.text(firstNumber * secondNumber);
           }
         })
+        
+        $(".clear").on("click", function () {
+            $("#first-number, #second-number, #operator, #result").empty();
+          })
+        
+        });
